@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { BookOpen, GraduationCap, Users, Globe } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const services = [
   {
@@ -33,6 +34,7 @@ export function Services() {
         className="max-w-6xl mx-auto"
       >
         <h1 className="text-4xl font-bold mb-12 text-center">Our Services</h1>
+        <Link to="/basic">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {services.map((service, index) => (
             <motion.div
@@ -48,6 +50,7 @@ export function Services() {
             </motion.div>
           ))}
         </div>
+        </Link>
       </motion.div>
     </div>
   );

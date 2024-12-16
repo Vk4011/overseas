@@ -6,6 +6,7 @@ import { Services } from './pages/Services';
 import { Universities } from './pages/Universities';
 import { Contact } from './pages/Contact';
 import { NotFound } from './pages/NotFound';
+import Basic from './pages/Basic';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="universities" element={<Universities />} />
           <Route path="contact" element={<Contact />} />
           <Route path="*" element={<NotFound />} />
+          <Route path="basic" element={<Basic />} />
         </Route>
       </Routes>
     </Router>
